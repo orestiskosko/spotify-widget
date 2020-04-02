@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400, 800");
+
+$background: rgba(29, 30, 34, 0.8);
+$foreground: #e6e6e6;
+$foreground-light: #fbfbfb;
+$foreground-accent: #259314;
+$size: 20px;
+$ratio: 1.2;
+$transition-time: 0.2s;
+
+body {
+    background: $background;
+    color: $foreground;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 15px;
+    -webkit-app-region: drag;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    padding: 0px;
+    -webkit-app-region: no-drag;
+}
+
+.subtitle {
+    font-size: small;
+    margin: 0px;
+}
+
+.track-info-container {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+}
+
+.album-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 210px;
+}
+
+.track-info-title {
+    text-align: start;
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.album-image {
+    margin-right: 10px;
+    height: 50px;
+}
+
+.player-button {
+    border: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: $foreground;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: $foreground-light;
+    }
+
+    &:active {
+        color: $foreground-accent;
+    }
+
+    &.selected {
+        color: $foreground-accent;
+    }
+}
+
+.player-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px 0px 0px;
+}
+
+.container-item {
+    flex-grow: 1;
+}
+
+.login-container {
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

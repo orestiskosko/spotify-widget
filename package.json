@@ -1,0 +1,34 @@
+{
+    "name": "spotify-widget",
+    "productName": "spotify-widget",
+    "version": "1.0.0",
+    "description": "A simple spotify widget",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "electron src/main.js",
+        "build-darwin": "electron-packager . --overwrite --platform=darwin --arch=all --out=dist",
+        "build-win": "electron-packager . --overwrite --asar --platform=win32 --arch=all --out=dist",
+        "build-linux": "electron-packager . --overwrite --platform=linux --arch=all --out=dist",
+        "build-all": "electron-packager . --all --overwrite --out=dist",
+        "setup-win": "electron-installer-windows --src dist/spotify-widget-win32-x64/ --dest dist/installers/ --overwrite",
+        "setup-darwin": "electron-installer-dmg ./spotify-widget-darwin-x64/spotify-widget.app spotify-widget --out dist/installers --overwrite"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Orestis Koskoletos",
+        "email": "orestiskosko92@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.13.0",
+        "dotenv": "^8.2.0",
+        "superagent": "^5.2.2"
+    },
+    "devDependencies": {
+        "electron": "8.2.0",
+        "electron-installer-dmg": "^3.0.0",
+        "electron-installer-windows": "^3.0.0",
+        "electron-packager": "^14.2.1",
+        "electron-reload": "^1.5.0"
+    }
+}

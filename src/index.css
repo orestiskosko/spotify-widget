@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400, 800");
+body {
+  background: rgba(29, 30, 34, 0.8);
+  color: #e6e6e6;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px;
+  padding: 15px;
+  -webkit-app-region: drag;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  padding: 0px;
+  -webkit-app-region: no-drag;
+}
+
+.subtitle {
+  font-size: small;
+  margin: 0px;
+}
+
+.track-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 50px;
+}
+
+.album-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 50px;
+  width: 210px;
+}
+
+.track-info-title {
+  text-align: start;
+  text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.album-image {
+  margin-right: 10px;
+  height: 50px;
+}
+
+.player-button {
+  border: 0;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: #e6e6e6;
+}
+
+.player-button:focus {
+  outline: none;
+}
+
+.player-button:hover {
+  color: #fbfbfb;
+}
+
+.player-button:active {
+  color: #259314;
+}
+
+.player-button.selected {
+  color: #259314;
+}
+
+.player-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0px 0px 0px;
+}
+
+.container-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.login-container {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=index.css.map */

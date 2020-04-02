@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="index.css" />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="track-info-container">
+            <img id="album-img" src="" class="album-image" />
+            <div id="track" class="album-info-container">
+                <p id="artist-name" class="track-info-title"></p>
+                <p id="track-name" class="track-info-title"></p>
+            </div>
+        </div>
+
+        <div class="player-container">
+            <div class="container-item">
+                <button id="previous-btn" class="player-button">
+                    <span class="fas fa-backward"></span>
+                </button>
+            </div>
+
+            <div class="container-item">
+                <button id="playback-btn" class="player-button">
+                    <span class="fas fa-pause"></span>
+                </button>
+            </div>
+
+            <div class="container-item">
+                <button id="next-btn" class="player-button">
+                    <span class="fas fa-forward"></span>
+                </button>
+            </div>
+
+            <div class="container-item">
+                <button id="shuffle-btn" class="player-button">
+                    <span class="fas fa-random"></span>
+                </button>
+            </div>
+
+            <div class="container-item">
+                <button id="repeat-btn" class="player-button">
+                    <span class="fas fa-redo-alt"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="login-container" class="login-container">
+            <button id="login-btn" class="player-button">Login</button>
+            <p id="auth-info" class="subtitle" hidden></p>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
